@@ -20,13 +20,13 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
-function WhatsAppButton({ label = "Falar no WhatsApp" }: { label?: string }) {
+function WhatsAppButton({ label = "Falar no WhatsApp", pulse = false }: { label?: string; pulse?: boolean }) {
   return (
     <a
       href={WHATSAPP_URL}
       target="_blank"
       rel="noopener noreferrer"
-      className="group relative flex w-full items-center justify-center gap-3 rounded-full px-6 py-5 text-base font-bold text-primary-foreground transition-transform active:scale-[0.98]"
+      className={`group relative flex w-full items-center justify-center gap-3 rounded-full px-6 py-5 text-base font-bold text-primary-foreground transition-transform active:scale-[0.98] ${pulse ? "animate-pulse-cta" : ""}`}
       style={{
         backgroundImage: "var(--gradient-primary)",
         boxShadow: "var(--shadow-cta)",
@@ -152,7 +152,7 @@ function Index() {
 
         {/* Primary CTA */}
         <div className="mt-6">
-          <WhatsAppButton />
+          <WhatsAppButton label="PEDIR AGORA NO WHATSAPP" pulse />
           <p className="mt-3 text-center text-xs text-muted-foreground">
             Atendimento rápido · Pague como preferir
           </p>
