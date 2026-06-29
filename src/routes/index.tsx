@@ -77,9 +77,8 @@ function Index() {
               className="rounded-md px-2 py-0.5 italic text-primary-foreground"
               style={{ backgroundImage: "var(--gradient-primary)" }}
             >
-              E SÓ PAGA
+              E SÓ PAGA DEPOIS!🤝
             </span>{" "}
-            DEPOIS!🤝
           </h1>
           <div className="mt-5 flex items-center justify-center gap-3 text-xs font-semibold uppercase tracking-widest text-primary-deep">
             <span className="h-px w-8 bg-primary/40" />
