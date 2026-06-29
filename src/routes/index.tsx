@@ -152,7 +152,7 @@ function Index() {
 
         {/* Primary CTA */}
         <div className="mt-6">
-          <WhatsAppButton />
+          <WhatsAppButton label="PEDIR AGORA NO WHATSAPP" pulse />
           <p className="mt-3 text-center text-xs text-muted-foreground">
             Atendimento rápido · Pague como preferir
           </p>
