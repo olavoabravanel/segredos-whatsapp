@@ -72,14 +72,14 @@ function Index() {
             <Lock className="h-3 w-3" /> Edição limitada
           </span>
           <h1 className="mt-4 text-3xl font-black uppercase leading-tight tracking-tight sm:text-4xl">
-            Pare de operar no escuro. Domine os{" "}
+            VOCÊ RECEBE O LIVRO PRIMEIRO...{" "}
             <span
               className="rounded-md px-2 py-0.5 italic text-primary-foreground"
               style={{ backgroundImage: "var(--gradient-primary)" }}
             >
-              Segredos
+              E SÓ PAGA
             </span>{" "}
-            do Trade.
+            DEPOIS!🤝
           </h1>
           <div className="mt-5 flex items-center justify-center gap-3 text-xs font-semibold uppercase tracking-widest text-primary-deep">
             <span className="h-px w-8 bg-primary/40" />
@@ -105,7 +105,7 @@ function Index() {
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary opacity-75" />
                 <span className="relative inline-flex h-2 w-2 rounded-full bg-primary" />
               </span>
-              Estoque baixo
+              Somente hoje
             </span>
           </div>
 
@@ -121,7 +121,7 @@ function Index() {
 
           <div className="mt-6 text-center">
             <p className="text-xs font-medium uppercase tracking-widest text-muted-foreground">
-              De <span className="line-through">R$97</span> por
+              De <span className="line-through">R$189,90</span> por
             </p>
             <p className="mt-1 text-4xl font-black text-primary-deep">
               R$ 10
@@ -137,7 +137,7 @@ function Index() {
             </div>
             <div className="border-x border-border">
               <p className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground">Bônus</p>
-              <p className="mt-1 text-sm font-black text-primary-deep">3 grátis</p>
+              <p className="mt-1 text-sm font-black text-primary-deep">Surpresa</p>
             </div>
             <div>
               <p className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground">Garantia</p>
@@ -146,7 +146,7 @@ function Index() {
           </div>
 
           <p className="mt-5 text-center text-sm leading-relaxed text-foreground/80">
-            O método direto que ensina <span className="font-bold text-primary-deep">disciplina, gestão de risco e leitura de mercado</span> — sem promessas mirabolantes, sem fórmula mágica.
+            O método direto que ensina <span className="font-bold text-primary-deep">disciplina, gestão de risco e leitura de mercado,</span> sem promessas mirabolantes, sem fórmula mágica.
           </p>
         </section>
 
@@ -219,7 +219,7 @@ function Index() {
           {[
             { icon: ShieldCheck, label: "Compra Segura" },
             { icon: TrendingUp, label: "Método Real" },
-            { icon: BookOpen, label: "Edição Física" },
+            { icon: BookOpen, label: "Edição Digital" },
           ].map(({ icon: Icon, label }) => (
             <div key={label} className="rounded-2xl border border-border bg-card p-3">
               <Icon className="mx-auto h-5 w-5 text-primary-deep" />
