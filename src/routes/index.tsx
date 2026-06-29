@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Check, MessageCircle, ShieldCheck, BookOpen, TrendingUp, Lock } from "lucide-react";
 import { useEffect } from "react";
-import livroCover from "@/assets/livro-segredos-do-trade.jpg";
+import livroCover from "@/assets/livro-segredos-do-trade.png";
 
 const WHATSAPP_URL =
   "https://wa.me/5562996379794?text=" +
@@ -121,10 +121,10 @@ function Index() {
 
           <div className="mt-6 text-center">
             <p className="text-xs font-medium uppercase tracking-widest text-muted-foreground">
-              De <span className="line-through">R$197</span> por
+              De <span className="line-through">R$97</span> por
             </p>
             <p className="mt-1 text-4xl font-black text-primary-deep">
-              R$ 97
+              R$ 10
               <span className="ml-1 align-top text-base font-bold">,00</span>
             </p>
             <p className="mt-1 text-xs text-muted-foreground">à vista ou parcelado no cartão</p>
@@ -133,7 +133,7 @@ function Index() {
           <div className="mt-5 grid grid-cols-3 gap-2 rounded-2xl bg-white/70 p-3 text-center">
             <div>
               <p className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground">Páginas</p>
-              <p className="mt-1 text-sm font-black text-foreground">+220</p>
+              <p className="mt-1 text-sm font-black text-foreground">+30</p>
             </div>
             <div className="border-x border-border">
               <p className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground">Bônus</p>
@@ -141,7 +141,7 @@ function Index() {
             </div>
             <div>
               <p className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground">Garantia</p>
-              <p className="mt-1 text-sm font-black text-foreground">7 dias</p>
+              <p className="mt-1 text-sm font-black text-foreground">Vitalícia</p>
             </div>
           </div>
 
