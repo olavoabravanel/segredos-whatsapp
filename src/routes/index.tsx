@@ -254,6 +254,9 @@ function Index() {
           </p>
         </section>
 
+        {/* VSL */}
+        <VslPlayer />
+
         <footer className="mt-10 text-center text-[11px] text-muted-foreground">
           © {new Date().getFullYear()} Segredos do Trade · Este produto não garante resultados financeiros. Investir envolve riscos.
         </footer>
