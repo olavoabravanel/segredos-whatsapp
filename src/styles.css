@@ -150,3 +150,18 @@
     color: var(--color-foreground);
   }
 }
+
+@keyframes pulse-cta {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 14px 32px -10px color-mix(in oklab, var(--primary) 55%, transparent);
+  }
+  50% {
+    transform: scale(1.03);
+    box-shadow: 0 18px 40px -8px color-mix(in oklab, var(--primary) 75%, transparent);
+  }
+}
+
+.animate-pulse-cta {
+  animation: pulse-cta 1.6s ease-in-out infinite;
+}
