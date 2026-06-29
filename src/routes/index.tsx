@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Check, MessageCircle, ShieldCheck, BookOpen, TrendingUp, Lock } from "lucide-react";
+import { useEffect } from "react";
 import livroCover from "@/assets/livro-segredos-do-trade.jpg";
 
 const WHATSAPP_URL =
@@ -36,6 +37,28 @@ function WhatsAppButton({ label = "Falar no WhatsApp" }: { label?: string }) {
       </span>
       {label}
     </a>
+  );
+}
+
+function VslPlayer() {
+  useEffect(() => {
+    const id = "vturb-player-script-6a42bd1f54f5a89ef8601746";
+    if (document.getElementById(id)) return;
+    const s = document.createElement("script");
+    s.id = id;
+    s.src =
+      "https://scripts.converteai.net/adf170ce-1438-43d2-917b-e507e4056a4d/players/6a42bd1f54f5a89ef8601746/v4/player.js";
+    s.async = true;
+    document.head.appendChild(s);
+  }, []);
+
+  return (
+    <div
+      className="mt-6"
+      dangerouslySetInnerHTML={{
+        __html: `<vturb-smartplayer id="vid-6a42bd1f54f5a89ef8601746" style="display:block;margin:0 auto;width:100%;max-width:400px;"><div class="vturb-player-placeholder" style="position:relative;width:100%;padding:177.77777777777777% 0 0;z-index:0;background-color:black;"></div></vturb-smartplayer>`,
+      }}
+    />
   );
 }
 
