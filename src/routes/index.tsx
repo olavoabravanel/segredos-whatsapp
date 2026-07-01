@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import livroCover from "@/assets/livro-segredos-do-trade.png";
 
 const WHATSAPP_URL =
-  "https://wa.me/5562996379794?text=" +
+  "https://xbotting.vercel.app/api/redirect/whatsapp?flowId=b3260b3d-18e3-4655-806c-989f0a95fcd6&text=" +
   encodeURIComponent("Eu quero comprar o Segredos do Trade!");
 
 export const Route = createFileRoute("/")({
