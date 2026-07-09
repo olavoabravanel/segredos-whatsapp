@@ -123,7 +123,7 @@ function Index() {
               De <span className="line-through">R$189,90</span> por
             </p>
             <p className="mt-1 text-4xl font-black text-primary-deep">
-              R$ 27
+              R$ 10
               <span className="ml-1 align-top text-base font-bold">,00</span>
             </p>
             <p className="mt-1 text-xs text-muted-foreground">à vista ou parcelado no cartão</p>
